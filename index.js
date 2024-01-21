@@ -86,6 +86,7 @@ buttons.forEach((button) => {
 
     if (currentButton.contains("B")) {
       document.querySelector(".picsOne").src = ilustrations[0];
+      document.querySelector(".picsOne").classList.remove("searchi");
       document.querySelector(".headsOne").textContent = "Bookmark in one click";
       document.querySelector(".graphOne").textContent = "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.";
       presetShape.classList.remove("searchii");
@@ -94,6 +95,7 @@ buttons.forEach((button) => {
 
     else if (currentButton.contains("S")) {
       document.querySelector(".picsOne").src = ilustrations[1];
+      document.querySelector(".picsOne").classList.add("searchi");
       document.querySelector(".headsOne").textContent = "Intelligent search";
       document.querySelector(".graphOne").textContent = "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.";
       presetShape.classList.add("searchii");
@@ -102,6 +104,7 @@ buttons.forEach((button) => {
     
     else {
       document.querySelector(".picsOne").src = ilustrations[2];
+      document.querySelector(".picsOne").classList.remove("searchi");
       document.querySelector(".headsOne").textContent = "Share your bookmarks";
       document.querySelector(".graphOne").textContent = "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.";
       presetShape.classList.remove("searchii");
